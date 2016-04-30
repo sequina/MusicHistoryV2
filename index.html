@@ -3,23 +3,51 @@
 <head>
   <meta charset="utf-8">
   <title>Music History Project</title>
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
 
 <ul class="nav arial">
-  <li><a href="#" class="selected">Artists</a></li>
-  <li><a href="#">View Music</a></li>
-  <li><a href="#">Stuff</a></li>
+  <li><a href="#" id="home-link">Home</a></li>
+  <li><a href="#" id="list-link">List Music</a></li>
+  <li><a href="#" id="add-music">Add Music</a></li>
 </ul>
 
-<div id = "container">
-<h1>{Bad Blood}by{artist}</h1>
+<section id="home-view"></section>
+
+<div id="list-view" class="hidden">
+  <section id="list-view">
+    <div id = "container">
+      <h1>{Bad Blood}by{artist}</h1>
   <!-- <h1>Taylor Swift</h1>
   <h1>Pop</h1> -->
+    </div>
+  </section>
+</div>
 
-  </div>
+<div id="add-view" class="hidden">
+  <section >
+    <label for="songName">Type Song Name</label>
+    <input type="text" name="songName"></input>
+<br/>
+    <label for="artistName">Type Artist Name</label>
+    <input type="text" name="artistName"></input>
+<br/>
+    <label for="albumName">Type Album Name</label>
+    <input type="text" name="albumName"></input>
+<br/>
+
+    <button id="addSongs">Add</button>
+  </section>
+</div>
+
+
 
 <script type="text/css" src="styles/main.css"></script>
-<script type="text/javascript" src="javascripts/main.js"></script>
+<script type="text/javascript" src="javascripts/home.js"></script>
+<script type="text/javascript" src="javascripts/listView.js"></script>
+<script type="text/javascript" src="javascripts/add.js"></script>
+<script type="text/javascript" src="javascripts/songs.js"></script>
+
 </body>
 </html>
