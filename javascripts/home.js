@@ -1,12 +1,3 @@
-// $("#homeLink").click (function() {
-//   $("#homeView").addClass("hidden");
-//   $("#addView").addClass("hidden");
-
-// $("#homeView").addClass("visible");
-// $("homeView").removeClass("hidden");
-
-// });
-
 $("#home-link").click(function() {
   console.log("im clicked home");
 

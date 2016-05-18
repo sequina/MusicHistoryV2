@@ -1,19 +1,11 @@
-ul > li {
+.nav {
   display: inline;
   float: left;
-  font-size: 14px;
-  padding-right: 8px;
-  list-style-type: none;
-  background-color: #FFB4B0;
+  font-size: 12px;
+  list-style: none;
+  /*background-color: #FFB4B0;*/
 }
 
-/*.visible {
-  display: block;
-}
-
-.hidden {
-  display: none;
-}*/
 
 body {
   font-size: 2em;
@@ -29,5 +21,14 @@ body {
 
 #add-view {
   background-color: #00FFFF;
+  margin-top: 50px;
 }
 
+#home-view {
+  margin-top: 50px;
+}
+.list-view {
+  padding-left: 10px;
+  margin: 10px 5px 50px 0;
+
+}

@@ -10,16 +10,31 @@
 
 <body>
 
-<div class = "container-fluid">
-  <div class = "row">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
-    <ul class="nav arial">
-      <li><a href="#" id = "home-link">Home</a></li>
-      <li><a href="#" id = "list-link">List Music</a></li>
-      <li><a href="#" id ="add-music">Add Music</a></li>
-    </ul>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="#" id = "list-link">List Music <span class="sr-only">(current)</span></a></li>
+        <li><a href="#" id="add-music">Add Music</a></li>
+          <a class="navbar-brand" href="#">Brand</a>
+        <!-- <ul> -->
+         <!--  <a href="#" id = "list-link">List Music</a> -->
+          <!-- <a href="#" id ="add-music">Add Music</a> -->
+       <!--  </ul> -->
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
+</nav>
+
 
 <div id="home">
   <!-- <section class = "home-view"> -->
@@ -71,7 +86,6 @@
     <br/>
 
     <button id = "addSongs">Add</button>
-    <button id="editButton">Edit</button>
 
   </section>
 </div>

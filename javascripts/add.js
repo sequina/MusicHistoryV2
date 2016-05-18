@@ -1,3 +1,4 @@
+//click event hide and show views when add button is clicked
 $("#add-music").click(function() {
   console.log("im clicked");
 
@@ -8,6 +9,7 @@ $("#add-music").click(function() {
   console.log ($("#add-view"));
 });
 
+//allows users to add a song in form
 $("#addSongs").click(function() {
   console.log("clicked add button")
   let newSong = {
