@@ -1,11 +1,37 @@
-var addMusic = document.getElementById("add-music");
-var addView = document.getElementById("add-view");
+$("#add-music").click(function() {
+  console.log("im clicked");
 
-addMusic.addEventListener("click", function() {
-  homeView.classList.add("hidden");
-  listView.classList.add("hidden");
+  $("#home").hide();
+  $("#list-view").hide();
 
-addView.classList.add("visible");
-addView.classList.remove("hidden");
-
+  $("#add-view").show();
+  console.log ($("#add-view"));
 });
+
+$("#addSongs").click(function() {
+  console.log("clicked add button")
+  let newSong = {
+      "album": $("#userAlbum").val(),
+      "artist": $("#userArtist").val(),
+      "title": $("#userTitle").val()
+    }
+    console.log(newSong);
+
+//EDIT BUTTON
+// function activateEditButton () {
+
+// $("#editButton").click(function(e) {
+//   console.log(e);
+//   });
+// };
+
+
+  $.ajax({
+      url: "https://musicv2.firebaseio.com/songs.json",
+      type: "POST",
+      data: JSON.stringify(newSong)
+    }).done(function(dataPost) {
+      loadSongs();
+      console.log("yay! it saves", dataPost)
+    });
+  });

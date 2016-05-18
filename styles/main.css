@@ -1,19 +1,33 @@
 ul > li {
   display: inline;
+  float: left;
+  font-size: 14px;
+  padding-right: 8px;
   list-style-type: none;
-  margin: 5px 15px 0 15px;
-  background-color: goldenrod;
-  padding: 5px;
+  background-color: #FFB4B0;
 }
 
-.visible {
+/*.visible {
   display: block;
 }
 
 .hidden {
   display: none;
-}
+}*/
 
 body {
   font-size: 2em;
 }
+
+#home-view {
+  background-color: #4DD7FA;
+}
+
+#list-view {
+  background-color: #FEFAC0;
+}
+
+#add-view {
+  background-color: #00FFFF;
+}
+

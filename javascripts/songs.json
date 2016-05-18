@@ -1,0 +1,19 @@
+{
+  "songs": {
+      "song1": {
+      "title": "Bad Girlfriend",
+      "artist": "Lola Cocoa",
+      "album": "Bad Girlfriend"
+    },
+      "song2" : {
+      "title": "Ain't It Funny",
+      "artist": "Jennifer Lopez",
+      "album": "Ain't It Funny"
+    },
+      "song3" : {
+      "title": "Honey, I'm Home",
+      "artist": "Shania Twain",
+      "album": "Honey, I'm Home"
+    }
+  }
+};

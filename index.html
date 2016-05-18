@@ -1,53 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Music History Project</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
+
 <body>
 
-<ul class="nav arial">
-  <li><a href="#" id="home-link">Home</a></li>
-  <li><a href="#" id="list-link">List Music</a></li>
-  <li><a href="#" id="add-music">Add Music</a></li>
-</ul>
+<div class = "container-fluid">
+  <div class = "row">
 
-<section id="home-view"></section>
-
-<div id="list-view" class="hidden">
-  <section id="list-view">
-    <div id = "container">
-      <h1>{Bad Blood}by{artist}</h1>
-  <!-- <h1>Taylor Swift</h1>
-  <h1>Pop</h1> -->
-    </div>
-  </section>
+    <ul class="nav arial">
+      <li><a href="#" id = "home-link">Home</a></li>
+      <li><a href="#" id = "list-link">List Music</a></li>
+      <li><a href="#" id ="add-music">Add Music</a></li>
+    </ul>
+  </div>
 </div>
 
-<div id="add-view" class="hidden">
-  <section >
+<div id="home">
+  <!-- <section class = "home-view"> -->
+  <fieldset class="col-xs-2 container" id="home-view">
+    <div>Song Length</div>
+      <br />
+      <label>Artist:</label>
+      <br />
+        <select placeholder="Options">
+            <option>Music1</option>
+            <option>Music2</option>
+            <option>Music3</option>
+            <option>Music4</option>
+        </select>
+      <br />
+      <label>Album:</label>
+      <br />
+        <select placeholder="Options">
+            <option>Album1</option>
+            <option>Album2</option>
+            <option>Album3</option>
+            <option>Album4</option>
+        </select>
+      <br />
+      <label>Genre</label>
+        <br />
+        <input type="checkbox" name="pop" value="pop">Pop
+        <input type="checkbox" name="hip-hop" value="hip-hop">Hip-Hop
+        <input type="checkbox" name="country" value="country">Country
+    </fieldset>
+  <!-- </section> -->
+</div>
+
+
+<div id = "list-view">
+
+</div>
+
+<div id = "add-view">
+  <section>
     <label for="songName">Type Song Name</label>
-    <input type="text" name="songName"></input>
-<br/>
+    <input id="userTitle" type ="text" name="songName">
+    <br/>
     <label for="artistName">Type Artist Name</label>
-    <input type="text" name="artistName"></input>
-<br/>
+    <input id ="userArtist" type = "text" name="artistName">
+    <br/>
     <label for="albumName">Type Album Name</label>
-    <input type="text" name="albumName"></input>
-<br/>
+    <input id ="userAlbum" type = "text" name="albumName">
+    <br/>
 
-    <button id="addSongs">Add</button>
+    <button id = "addSongs">Add</button>
+    <button id="editButton">Edit</button>
+
+  </section>
+</div>
+
+<div id = "more-songs" class="hidden">
+  <section>
+
   </section>
 </div>
 
 
-
-<script type="text/css" src="styles/main.css"></script>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="javascripts/home.js"></script>
 <script type="text/javascript" src="javascripts/listView.js"></script>
 <script type="text/javascript" src="javascripts/add.js"></script>
-<script type="text/javascript" src="javascripts/songs.js"></script>
+<script type="text/javascript" src="javascripts/main.js"></script>
+<!-- <script type="text/javascript" src="javascripts/songs.json"></script> -->
+<!-- <script type="text/javascript" src="javascripts/moreSongs.json"></script> -->
 
 </body>
 </html>

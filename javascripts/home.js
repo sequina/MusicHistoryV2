@@ -1,12 +1,18 @@
-var homeLink = document.getElementById("home-link");
-var homeView = document.getElementById("home-view");
+// $("#homeLink").click (function() {
+//   $("#homeView").addClass("hidden");
+//   $("#addView").addClass("hidden");
 
-homeLink.addEventListener("click", function() {
-  homeView.classList.add("hidden");
-  addView.classList.add("hidden");
+// $("#homeView").addClass("visible");
+// $("homeView").removeClass("hidden");
 
-homeView.classList.add("visible");
-homeView.classList.remove("hidden");
+// });
 
+$("#home-link").click(function() {
+  console.log("im clicked home");
+
+  $("#home-view").show();
+  $("#list-view").hide();
+
+  $("#add-view").hide();
+  console.log ($("#home-view"));
 });
-
